@@ -57,7 +57,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'shaza.wsgi.application'
+WSGI_APPLICATION = 'partOfBackend.wsgi.application'
 
 
 DATABASES = {
