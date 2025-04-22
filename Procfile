@@ -1,1 +1,1 @@
-web: gunicorn Healix.wsgi
+web: gunicorn partOfBackend.wsgi
