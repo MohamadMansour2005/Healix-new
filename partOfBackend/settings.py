@@ -64,11 +64,11 @@ WSGI_APPLICATION = 'partOfBackend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'sql12774778',
-        'HOST': 'sql12.freesqldatabase.com',
+        'NAME': 'online_consultation',
+        'HOST': '127.0.0.1',
         'PORT': '3306',
-        'USER': 'sql12774778',
-        'PASSWORD': 'W7i2QKHMYi',
+        'USER': 'mohamadmansour',
+        'PASSWORD': 'sqlpass123123!',
     }
 }
 
