@@ -14,6 +14,9 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://*.ngrok.io',   # This will allow all ngrok URLs.
+]
 
 
 # Application definition
@@ -63,14 +66,15 @@ WSGI_APPLICATION = 'partOfBackend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DB_NAME'),
-        'USER': os.getenv('DB_USER'),
-        'PASSWORD': os.getenv('DB_PASSWORD'),
-        'HOST': os.getenv('DB_HOST'),
-        'PORT': os.getenv('DB_PORT', '5432'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'online_consultation',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+        'USER': 'mohamadmansour',
+        'PASSWORD': 'sqlpass123123!',
     }
 }
+
 
 
 AUTH_PASSWORD_VALIDATORS = [
